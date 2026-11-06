@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telecso S.A.S. · Auditoría SG-SST · Donny Vasquez Ramos</title>
+<style>
+:root{--ink:#242438;--muted:#737485;--purple:#743dc2;--line:#e8e7ef;--paper:#fff;--bg:#f7f7fb;--green:#22795b;--amber:#9c6415;--red:#b53c50}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #be9ae9;outline-offset:3px}button{border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 15px;border-radius:9px}button:hover{border-color:var(--purple)}.primary{background:var(--purple);color:white;border-color:var(--purple)}.topbar{background:#fff;border-bottom:1px solid var(--line);padding:18px 4vw;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:25px;font-weight:800;letter-spacing:-1px;color:var(--purple)}.brand span{font-size:12px;letter-spacing:0;font-weight:500;color:var(--muted);margin-left:18px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.shell{max-width:1440px;margin:auto;padding:35px 4vw 60px}.eyebrow{text-transform:uppercase;font-size:11px;font-weight:750;letter-spacing:1.8px;color:var(--purple)}h1{font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-1.1px;margin:12px 0}h2{font-size:18px;margin:0 0 8px}h3{font-size:14px;margin:0 0 10px}p{margin:8px 0}.muted{color:var(--muted)}.heading{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:25px}.badge{display:inline-block;border-radius:6px;padding:4px 9px;font-size:11px;font-weight:650;background:#eee7f8;color:var(--purple)}.panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px}.context{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:20px}label{font-size:12px;font-weight:650;display:block}input,textarea{width:100%;border:1px solid var(--line);border-radius:7px;padding:9px 10px;background:#fff;color:var(--ink);margin-top:6px}textarea{resize:vertical;min-height:85px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}.stat{padding:18px 20px}.stat b{display:block;font-size:30px;line-height:1.3;margin-top:5px;letter-spacing:-1px}.stat small{color:var(--muted)}.progress{height:5px;border-radius:8px;background:#ece9f2;margin:14px 0 7px;overflow:hidden}.progress span{display:block;background:var(--purple);height:100%;width:0;transition:width .2s}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px;align-items:start}.side{position:sticky;top:18px;padding:18px 10px}.side h2{padding:0 10px}.topic{border:0;border-radius:7px;width:100%;text-align:left;padding:9px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;margin:2px 0}.topic.active{background:#f0e9fa;color:var(--purple);font-weight:700}.topic span:last-child{color:var(--muted);font-size:11px;white-space:nowrap}.main{min-width:0}.main>.panel{margin-bottom:20px}.sectionhead{display:flex;justify-content:space-between;gap:12px;align-items:center}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}.filters button{font-size:12px;padding:6px 10px}.filters button.active{background:var(--ink);border-color:var(--ink);color:white}.search{max-width:300px;margin:0}.item{border-top:1px solid var(--line)}summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:42px minmax(0,1fr) 150px 15px;gap:10px;align-items:center;padding:17px 0}summary::-webkit-details-marker{display:none}summary:after{content:'+';font-size:19px;color:var(--muted)}details[open]>summary:after{content:'−'}summary .qid{font-size:12px;font-weight:700;color:var(--purple)}summary .q{font-size:13px;font-weight:550}.status{font-size:11px;border-radius:6px;padding:5px 9px;width:fit-content;background:#f1f2f5;color:#686a78}.status.C{background:#e9f6ee;color:var(--green)}.status.CP{background:#fff4df;color:var(--amber)}.status.NC{background:#fcebf0;color:var(--red)}.status.NA{background:#eeeaf5;color:#695c7b}.detail{background:#faf9fd;border:1px solid var(--line);border-radius:10px;padding:18px;margin:0 0 18px 50px}.detail .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.choices{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 18px}.choices button{font-size:11px;padding:7px 10px}.choices button[aria-pressed=true]{border-color:var(--purple);background:#eee7f8;color:var(--purple)}.note{border-left:3px solid #b895df;background:#f5f0fc;padding:12px 15px;font-size:12px;margin:18px 0;color:#625274}.empty{padding:25px;text-align:center;color:var(--muted)}.review{display:grid;grid-template-columns:1fr 1fr;gap:18px}.review section{border-top:1px solid var(--line);padding-top:14px}.record{padding:12px 0;border-bottom:1px solid var(--line);font-size:12px;overflow-wrap:anywhere}.record strong{display:block}.footer{font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;margin-top:25px}a{color:var(--purple)}.printnote{display:none}.mode{display:flex;gap:5px;margin:12px 0}.mode button[aria-pressed=true]{background:#eee7f8;border-color:#d2bce8;color:var(--purple)}
+@media(max-width:1000px){.context{grid-template-columns:1fr 1fr}.layout{grid-template-columns:190px minmax(0,1fr)}.stats{grid-template-columns:1fr 1fr}.detail{margin-left:0}.sectionhead{align-items:start;flex-direction:column}}
+@media(max-width:680px){.brand span{display:none}.topbar{align-items:start}.shell{padding:24px 16px}.heading{align-items:start;flex-direction:column}.layout{grid-template-columns:1fr}.side{position:static;max-height:220px;overflow:auto}.context,.review,.detail .grid{grid-template-columns:1fr}.panel{padding:16px}summary{grid-template-columns:30px minmax(0,1fr) 16px}summary .status{grid-column:2;grid-row:2}summary:after{grid-column:3;grid-row:1}.search{max-width:none}.footer{flex-direction:column}}
+@media print{@page{size:A4;margin:14mm}body{background:#fff;font-size:10px}.topbar,.side,.toolbar,.filters,.search,.mode,.choices,.no-print{display:none!important}.shell{padding:0;max-width:none}.heading{margin-bottom:15px}.layout{display:block}.panel{border-radius:0;padding:12px}.stats{grid-template-columns:repeat(4,1fr);gap:8px}.stat b{font-size:23px}.context{grid-template-columns:repeat(4,1fr);gap:8px}.context input{padding:3px;border:0}.detail{margin-left:0}.item,.record,.stat{break-inside:avoid}summary{padding:10px 0}.review{display:block}.printnote{display:block}.note{background:#fff}.footer{display:block}input,textarea{border:0;padding:2px;min-height:0} .detail section{break-inside:avoid} #conclusionHelp{display:none}textarea{height:auto}.item{break-inside:auto}.detail label{break-inside:avoid}.status{border:1px solid #ddd}.main>.panel{margin-bottom:12px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">kuida<span>Normas y Sistemas de Gestión</span></div><div class="toolbar"><button id="export">Exportar datos</button><button class="primary" id="print">Imprimir / PDF</button></div></header>
+<main class="shell">
+<div class="heading"><div><div class="eyebrow">SG-SST · Colombia</div><h1 id="title">Auditoría interna · Telecso S.A.S.</h1><p class="muted">Ingeniería de telecomunicaciones · Informe final de auditoría.</p></div><span class="badge">Ejercicio académico</span></div>
+<div style="display:none" class="mode no-print" aria-label="Tipo de evaluación"><button data-mode="diagnostico" aria-pressed="true">Diagnóstico</button><button data-mode="auditoria" aria-pressed="false">Auditoría interna</button></div>
+<section class="panel context" aria-label="Contexto de la evaluación">
+<label>Empresa<input data-context="company" placeholder="Nombre de la empresa"></label><label>Organización auditada<input data-context="auditedOrganization" readonly></label><label>Sede / proceso<input data-context="scope" placeholder="Alcance por confirmar"></label><label>Periodo evaluado<input data-context="period" placeholder="Ej. enero – diciembre 2026"></label><label>Auditor del ejercicio<input data-context="auditor" placeholder="Nombre o rol"></label>
+<label>Número de trabajadores<input data-context="workers" type="number" min="1" placeholder="Por confirmar"></label><label>Clase de riesgo<input data-context="risk" placeholder="I, II, III, IV o V"></label><label>Fecha de evaluación<input data-context="date" type="date"></label><label>Versión del informe<input data-context="version" placeholder="Ej. borrador 01"></label>
+</section>
+<div class="note">Ejercicio académico. Los datos y soportes corresponden a un caso de estudio y no acreditan una auditoría real de Telecso S.A.S. Las etiquetas C / CP / NC / NA son metodológicas y no generan el puntaje oficial de la Resolución 0312.</div>
+<section class="stats" aria-label="Resumen de revisión">
+<div class="panel stat"><span>Avance de revisión</span><b id="progressNumber">0 / 67</b><div class="progress"><span id="progressBar"></span></div><small id="progressText">0% de ítems con resultado propuesto</small></div>
+<div class="panel stat"><span>Cumple</span><b id="countC">0</b><small>Dentro del alcance verificado</small></div>
+<div class="panel stat"><span>Brechas propuestas</span><b id="countGaps">0</b><small>Cumple parcialmente + no cumple</small></div>
+<div class="panel stat"><span>Pendientes</span><b id="countP">67</b><small>Requieren evidencia o revisión</small></div>
+</section>
+<section class="panel" style="margin-bottom:20px"><h2>Base de la evaluación</h2><p>Telecso S.A.S. se presenta como integradora de soluciones de ingeniería de telecomunicaciones, diseño y consultoría.</p><p>Fuente de contexto: <a href="https://telecso.co/">sitio corporativo de Telecso</a>. Esta información pública no acredita cumplimiento del SG-SST.</p><p>Informe elaborado por Donny Vasquez Ramos. Organización objeto del caso: Telecso S.A.S. Los identificadores EV relacionan los soportes con las verificaciones.</p></section><div class="layout"><nav class="panel side" aria-label="Temas de evaluación"><h2>Temas</h2><div id="topics"></div></nav>
+<div class="main"><section class="panel"><div class="sectionhead"><div><h2 id="listTitle">Todas las verificaciones</h2><div class="muted" id="listCount" role="status" aria-live="polite"></div></div><input class="search" id="search" type="search" aria-label="Buscar verificación" placeholder="Buscar por ID o descripción…"></div><div class="filters" id="filters" aria-label="Filtrar resultados"></div><p class="muted" style="font-size:12px">Abre una verificación para consultar o completar su evidencia y seguimiento.</p><div class="printnote">Impresión completa: incluye todos los temas y resultados, aunque la pantalla esté filtrada.</div><div id="items"></div></section>
+<section class="panel"><h2>Hallazgos y plan de acción</h2><p class="muted">17 hallazgos por verificación, con responsables, fechas y acciones de seguimiento.</p><div class="review"><section><h3>Hallazgos propuestos</h3><div id="findings"></div></section><section><h3>Acciones de seguimiento</h3><div id="actions"></div></section></div></section>
+<section class="panel"><h2>Resumen de hallazgos por verificación</h2><p class="muted">Conteo por ítem de la lista. Las observaciones corresponden a los 13 resultados CP; las 4 no conformidades corresponden a los resultados NC.</p><div id="academicSummary"></div><h3 style="margin-top:20px">Observaciones generales</h3><div id="generalNotes"></div><h3 style="margin-top:20px">Criterios de clasificación</h3><div id="classification"></div></section><section class="panel"><h2>Conclusión y validación</h2><p class="muted" id="conclusionHelp">Resume prioridades, evidencia faltante y próximos pasos del diagnóstico.</p><label>Concepto final del auditor<textarea data-context="conclusion" placeholder="Pendiente de evaluación. No se genera una conclusión de conformidad automáticamente."></textarea></label><div class="review" style="margin-top:15px"><label>Validado por<input data-context="validator" placeholder="Pendiente de revisión humana"></label><label>Fecha de validación<input data-context="validatedAt" type="date"></label></div></section>
+<div class="note">Cobertura orientativa del diplomado: 15 temas y 67 verificaciones. Confirmar aplicabilidad, requisitos vigentes, muestra y evidencia; complementar la lista según actividad y riesgos. NA requiere justificación. La falta de un documento no demuestra por sí sola un incumplimiento. Un diagnóstico no sustituye la auditoría anual.</div>
+</div></div>
+<footer class="footer"><span>Telecso S.A.S. · Informe final · v1</span><span>Referencias: Decreto 1072 de 2015 · Resolución 0312 de 2019<br>Lista didáctica adaptada de Trabajo_Final.pdf · No es una certificación.</span></footer>
+<section class="panel" style="margin-top:20px"><h2>Identificación y firmas</h2><div id="signatures" class="review"></div></section></main>
+<script>
+// Datos de presentación independientes de la aplicación. Sustituir por datos autorizados al integrar.
+const report = {
+  "company": {
+    "name": "Telecso S.A.S.",
+    "website": "https://telecso.co/",
+    "activity": "Integración de soluciones de ingeniería de telecomunicaciones; diseño y consultoría.",
+    "source": "Sitio corporativo consultado el 5 de noviembre de 2026. No acredita cumplimiento SG-SST."
+  },
+  "sources": [
+    {
+      "name": "Trabajo_Final.pdf",
+      "use": "Lista didáctica: 67 verificaciones en 15 temas; documento sin resultados diligenciados."
+    },
+    {
+      "name": "Sitio corporativo",
+      "url": "https://telecso.co/",
+      "use": "Contexto empresarial público, no evidencia de auditoría."
+    }
+  ],
+  "context": {
+    "company": "Telecso S.A.S.",
+    "scope": "Sede administrativa y operaciones técnicas · Turbaco (supuesto)",
+    "version": "Informe final · v1",
+    "conclusion": "SISTEMA NO CONFORME. Se identifican dos no conformidades mayores relativas al control de intervenciones eléctricas y la evaluación previa de cambios, además de dos menores sobre efectividad de la capacitación y cierre de investigaciones. Las conformidades observadas no compensan estos fallos. Se recomienda intervenir primero los controles críticos y verificar la eficacia de las acciones antes de cerrar los hallazgos. El concepto se limita a las muestras y al alcance definidos en este ejercicio académico.",
+    "workers": "32",
+    "risk": "III · supuesto académico",
+    "period": "01/01/2026 – 30/09/2026",
+    "auditor": "Donny Vasquez Ramos",
+    "date": "2026-10-02",
+    "validator": "Donny Vasquez Ramos · autor del informe",
+    "validatedAt": "2026-10-02",
+    "auditedOrganization": "Telecso S.A.S."
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Política de SST",
+      "items": [
+        {
+          "id": "1.1",
+          "question": "Existe una política de SST documentada.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 1.1: Existe una política de SST documentada. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-1.1 · Política SST-POL-01 versión 3 disponible en el repositorio.",
+          "finding": "Política SST-POL-01 versión 3 disponible en el repositorio.",
+          "action": "",
+          "owner": "Gerencia y responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "1.2",
+          "question": "La política está firmada por la alta dirección.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 1.2: La política está firmada por la alta dirección. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-1.2 · Documento aprobado y firmado por la gerencia el 15/01/2026.",
+          "finding": "Documento aprobado y firmado por la gerencia el 15/01/2026.",
+          "action": "",
+          "owner": "Gerencia y responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "1.3",
+          "question": "La política es comunicada a todos los trabajadores.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 1.3: La política es comunicada a todos los trabajadores. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-1.3 · En la muestra de 12 personas, 3 técnicos nuevos desconocen los compromisos de la política.",
+          "finding": "En la muestra de 12 personas, 3 técnicos nuevos desconocen los compromisos de la política.",
+          "action": "Reinducir a los tres técnicos y comprobar comprensión con preguntas sobre la política.",
+          "owner": "Gerencia y responsable SG-SST",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "1.4",
+          "question": "La política está disponible para partes interesadas.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 1.4: La política está disponible para partes interesadas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-1.4 · Política disponible en recepción y portal de proveedores.",
+          "finding": "Política disponible en recepción y portal de proveedores.",
+          "action": "",
+          "owner": "Gerencia y responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "1.5",
+          "question": "La política es revisada periódicamente.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 1.5: La política es revisada periódicamente. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-1.5 · Revisión documentada el 15/01/2026, sin cambios de alcance posteriores.",
+          "finding": "Revisión documentada el 15/01/2026, sin cambios de alcance posteriores.",
+          "action": "",
+          "owner": "Gerencia y responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Organización del SG-SST",
+      "items": [
+        {
+          "id": "2.1",
+          "question": "Se encuentra designado el responsable del SG-SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 2.1: Se encuentra designado el responsable del SG-SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-2.1 · Designación SST-DES-01 de una profesional responsable, con suplencia definida.",
+          "finding": "Designación SST-DES-01 de una profesional responsable, con suplencia definida.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "2.2",
+          "question": "El responsable cuenta con licencia vigente en SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 2.2: El responsable cuenta con licencia vigente en SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-2.2 · Expediente de competencia: licencia SST vigente durante el periodo y formación documentada.",
+          "finding": "Expediente de competencia: licencia SST vigente durante el periodo y formación documentada.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "2.3",
+          "question": "Existen funciones y responsabilidades definidas.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 2.3: Existen funciones y responsabilidades definidas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-2.3 · Manual SST-MAN-02 con funciones para gerencia, supervisores y personal técnico.",
+          "finding": "Manual SST-MAN-02 con funciones para gerencia, supervisores y personal técnico.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "2.4",
+          "question": "Se dispone de recursos humanos, físicos y financieros para el SG-SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 2.4: Se dispone de recursos humanos, físicos y financieros para el SG-SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-2.4 · Presupuesto del periodo de $48 millones; ejecución de $36 millones a septiembre con recursos disponibles.",
+          "finding": "Presupuesto del periodo de $48 millones; ejecución de $36 millones a septiembre con recursos disponibles.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "2.5",
+          "question": "Se evidencia compromiso de la alta dirección.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 2.5: Se evidencia compromiso de la alta dirección. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-2.5 · Gerencia participó en tres comités de seguimiento y aprobó recursos para controles eléctricos.",
+          "finding": "Gerencia participó en tres comités de seguimiento y aprobó recursos para controles eléctricos.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Peligros y riesgos",
+      "items": [
+        {
+          "id": "3.1",
+          "question": "Existe matriz de peligros actualizada.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 3.1: Existe matriz de peligros actualizada. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-3.1 · La matriz de enero no incorpora la actividad de mantenimiento de respaldo eléctrico iniciada en agosto.",
+          "finding": "La matriz de enero no incorpora la actividad de mantenimiento de respaldo eléctrico iniciada en agosto.",
+          "action": "Actualizar la matriz con el mantenimiento de respaldo eléctrico y validar controles en campo.",
+          "owner": "Coordinación de operaciones",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "3.2",
+          "question": "Los peligros están identificados por procesos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 3.2: Los peligros están identificados por procesos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-3.2 · Matriz identifica peligros por instalación, soporte, oficina y desplazamiento.",
+          "finding": "Matriz identifica peligros por instalación, soporte, oficina y desplazamiento.",
+          "action": "",
+          "owner": "Coordinación de operaciones",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "3.3",
+          "question": "Se realizó valoración de riesgos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 3.3: Se realizó valoración de riesgos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-3.3 · Valoración con metodología documentada y participación de 8 técnicos.",
+          "finding": "Valoración con metodología documentada y participación de 8 técnicos.",
+          "action": "",
+          "owner": "Coordinación de operaciones",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "3.4",
+          "question": "Se implementaron controles para riesgos prioritarios.",
+          "status": "NC",
+          "criterion": "Trabajo_Final.pdf · ítem 3.4: Se implementaron controles para riesgos prioritarios. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-3.4 · En 2 de 4 intervenciones eléctricas muestreadas no se implementó el control de aislamiento y verificación previa definido internamente.",
+          "finding": "En 2 de 4 intervenciones eléctricas muestreadas no se implementó el control de aislamiento y verificación previa definido internamente.",
+          "action": "Suspender intervenciones sin control; implementar aislamiento y verificación previa. Verificar cinco intervenciones consecutivas con supervisión.",
+          "owner": "Coordinación de operaciones",
+          "date": "2026-10-09",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "No conformidad mayor",
+          "priority": "Inmediata"
+        },
+        {
+          "id": "3.5",
+          "question": "La matriz se actualiza cuando hay cambios o anualmente.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 3.5: La matriz se actualiza cuando hay cambios o anualmente. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-3.5 · Se cumplió la revisión anual de enero, pero el cambio de agosto no fue incorporado a la matriz.",
+          "finding": "Se cumplió la revisión anual de enero, pero el cambio de agosto no fue incorporado a la matriz.",
+          "action": "Activar revisión de peligros por cada cambio y comprobar registro del cambio de agosto.",
+          "owner": "Coordinación de operaciones",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Requisitos legales",
+      "items": [
+        {
+          "id": "4.1",
+          "question": "Existe matriz legal en SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 4.1: Existe matriz legal en SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-4.1 · Matriz SST-LEG-01 con requisitos, responsables y soportes de evaluación.",
+          "finding": "Matriz SST-LEG-01 con requisitos, responsables y soportes de evaluación.",
+          "action": "",
+          "owner": "Responsable SG-SST y asesoría jurídica",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "4.2",
+          "question": "La matriz legal está actualizada.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 4.2: La matriz legal está actualizada. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-4.2 · La revisión trimestral de septiembre no incorporó cambios normativos identificados en el boletín interno.",
+          "finding": "La revisión trimestral de septiembre no incorporó cambios normativos identificados en el boletín interno.",
+          "action": "Actualizar el inventario con el boletín interno y validar versión y aplicabilidad de cada cambio.",
+          "owner": "Responsable SG-SST y asesoría jurídica",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "4.3",
+          "question": "Se evalúa periódicamente el cumplimiento legal.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 4.3: Se evalúa periódicamente el cumplimiento legal. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-4.3 · Se evaluaron 18 de 22 requisitos del inventario interno; cuatro quedaron sin conclusión sustentada.",
+          "finding": "Se evaluaron 18 de 22 requisitos del inventario interno; cuatro quedaron sin conclusión sustentada.",
+          "action": "Evaluar los cuatro requisitos restantes con soporte y registrar conclusión y acciones.",
+          "owner": "Responsable SG-SST y asesoría jurídica",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "4.4",
+          "question": "Se implementan acciones frente a incumplimientos identificados.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 4.4: Se implementan acciones frente a incumplimientos identificados. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-4.4 · Plan LEG-AC-02 registra tres brechas previas con responsables y seguimiento mensual.",
+          "finding": "Plan LEG-AC-02 registra tres brechas previas con responsables y seguimiento mensual.",
+          "action": "",
+          "owner": "Responsable SG-SST y asesoría jurídica",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Plan de trabajo anual",
+      "items": [
+        {
+          "id": "5.1",
+          "question": "Existe plan anual del SG-SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 5.1: Existe plan anual del SG-SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-5.1 · Plan SST-PTA-2026 aprobado el 15/01/2026.",
+          "finding": "Plan SST-PTA-2026 aprobado el 15/01/2026.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "5.2",
+          "question": "El plan contiene metas, responsables y recursos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 5.2: El plan contiene metas, responsables y recursos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-5.2 · Plan incluye 24 actividades, metas, cronograma, recursos y responsables.",
+          "finding": "Plan incluye 24 actividades, metas, cronograma, recursos y responsables.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "5.3",
+          "question": "Se realiza seguimiento al cumplimiento del plan.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 5.3: Se realiza seguimiento al cumplimiento del plan. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-5.3 · Seguimiento mensual en actas de enero a septiembre.",
+          "finding": "Seguimiento mensual en actas de enero a septiembre.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "5.4",
+          "question": "Se evidencia porcentaje de ejecución.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 5.4: Se evidencia porcentaje de ejecución. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-5.4 · 18 de 24 actividades vencidas al corte fueron ejecutadas: 75%; seis actividades están pendientes.",
+          "finding": "18 de 24 actividades vencidas al corte fueron ejecutadas: 75%; seis actividades están pendientes.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Capacitación y competencia",
+      "items": [
+        {
+          "id": "6.1",
+          "question": "Existe programa anual de capacitación.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 6.1: Existe programa anual de capacitación. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-6.1 · Programa SST-CAP-2026 incluye riesgos eléctricos, ergonomía y emergencias.",
+          "finding": "Programa SST-CAP-2026 incluye riesgos eléctricos, ergonomía y emergencias.",
+          "action": "",
+          "owner": "Gestión humana",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "6.2",
+          "question": "Se realiza inducción en SST al personal nuevo.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 6.2: Se realiza inducción en SST al personal nuevo. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-6.2 · Dos de seis ingresos muestreados recibieron inducción siete días después de iniciar labores.",
+          "finding": "Dos de seis ingresos muestreados recibieron inducción siete días después de iniciar labores.",
+          "action": "Impedir inicio de tareas sin inducción y revisar los próximos cinco ingresos.",
+          "owner": "Gestión humana",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "6.3",
+          "question": "Se realiza reinducción periódica.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 6.3: Se realiza reinducción periódica. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-6.3 · Reinducción de marzo con cobertura de las 32 personas del caso.",
+          "finding": "Reinducción de marzo con cobertura de las 32 personas del caso.",
+          "action": "",
+          "owner": "Gestión humana",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "6.4",
+          "question": "Hay registros de asistencia.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 6.4: Hay registros de asistencia. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-6.4 · Listas y registros de asistencia disponibles para ocho sesiones muestreadas.",
+          "finding": "Listas y registros de asistencia disponibles para ocho sesiones muestreadas.",
+          "action": "",
+          "owner": "Gestión humana",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "6.5",
+          "question": "Se evalúa la efectividad de las capacitaciones.",
+          "status": "NC",
+          "criterion": "Trabajo_Final.pdf · ítem 6.5: Se evalúa la efectividad de las capacitaciones. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-6.5 · Ninguna de las ocho sesiones muestreadas tiene evaluación de aprendizaje o aplicación exigida por el programa interno.",
+          "finding": "Ninguna de las ocho sesiones muestreadas tiene evaluación de aprendizaje o aplicación exigida por el programa interno.",
+          "action": "Implementar evaluación de aprendizaje y aplicación; revisar eficacia en dos sesiones y observación posterior.",
+          "owner": "Gestión humana",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "No conformidad menor",
+          "priority": "Programada"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "COPASST y comités",
+      "items": [
+        {
+          "id": "7.1",
+          "question": "El COPASST fue conformado correctamente.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 7.1: El COPASST fue conformado correctamente. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-7.1 · Acta electoral y conformación del COPASST del caso con representantes y periodo definidos.",
+          "finding": "Acta electoral y conformación del COPASST del caso con representantes y periodo definidos.",
+          "action": "",
+          "owner": "Secretaría de comités",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "7.2",
+          "question": "Existen actas de reuniones mensuales.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 7.2: Existen actas de reuniones mensuales. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-7.2 · Se localizaron ocho actas mensuales de nueve esperadas; la secretaría confirmó que no se celebró la reunión de julio.",
+          "finding": "Se localizaron ocho actas mensuales de nueve esperadas; la secretaría confirmó que no se celebró la reunión de julio.",
+          "action": "Reprogramar seguimiento de compromisos y verificar las tres próximas reuniones; conservar el registro de la omisión.",
+          "owner": "Secretaría de comités",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "7.3",
+          "question": "Se realiza seguimiento a compromisos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 7.3: Se realiza seguimiento a compromisos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-7.3 · Matriz de compromisos: diez cerrados y dos en seguimiento dentro del plazo.",
+          "finding": "Matriz de compromisos: diez cerrados y dos en seguimiento dentro del plazo.",
+          "action": "",
+          "owner": "Secretaría de comités",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "7.4",
+          "question": "Funciona el Comité de Convivencia Laboral cuando aplica.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 7.4: Funciona el Comité de Convivencia Laboral cuando aplica. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-7.4 · Comité de Convivencia conformado y registros de actuación reservados revisados sin datos personales.",
+          "finding": "Comité de Convivencia conformado y registros de actuación reservados revisados sin datos personales.",
+          "action": "",
+          "owner": "Secretaría de comités",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Gestión del cambio",
+      "items": [
+        {
+          "id": "8.1",
+          "question": "Existe procedimiento para gestión del cambio.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 8.1: Existe procedimiento para gestión del cambio. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-8.1 · Procedimiento SST-GC-01 define evaluación previa y participación de responsables.",
+          "finding": "Procedimiento SST-GC-01 define evaluación previa y participación de responsables.",
+          "action": "",
+          "owner": "Coordinación de operaciones",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "8.2",
+          "question": "Se evalúan riesgos derivados de cambios organizacionales.",
+          "status": "NC",
+          "criterion": "Trabajo_Final.pdf · ítem 8.2: Se evalúan riesgos derivados de cambios organizacionales. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-8.2 · El cambio a mantenimiento de respaldo eléctrico de agosto se ejecutó sin evaluación previa de riesgos; confirmado en entrevista del caso con operaciones.",
+          "finding": "El cambio a mantenimiento de respaldo eléctrico de agosto se ejecutó sin evaluación previa de riesgos; confirmado en entrevista del caso con operaciones.",
+          "action": "Evaluar el cambio de agosto y sus controles antes de continuar la actividad; verificar el procedimiento en los dos próximos cambios.",
+          "owner": "Coordinación de operaciones",
+          "date": "2026-10-09",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "No conformidad mayor",
+          "priority": "Inmediata"
+        },
+        {
+          "id": "8.3",
+          "question": "Se documentan las acciones implementadas.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 8.3: Se documentan las acciones implementadas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-8.3 · El cambio de oficina sí tiene controles documentados, pero el cambio de agosto carece de registro y plan de intervención.",
+          "finding": "El cambio de oficina sí tiene controles documentados, pero el cambio de agosto carece de registro y plan de intervención.",
+          "action": "Consolidar el expediente del cambio, responsables y controles; revisar trazabilidad con operaciones.",
+          "owner": "Coordinación de operaciones",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Elementos de protección personal",
+      "items": [
+        {
+          "id": "9.1",
+          "question": "Existe matriz de EPP por cargo.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 9.1: Existe matriz de EPP por cargo. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-9.1 · Matriz de EPP por exposición contempla personal técnico y administrativo.",
+          "finding": "Matriz de EPP por exposición contempla personal técnico y administrativo.",
+          "action": "",
+          "owner": "Supervisión técnica",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "9.2",
+          "question": "Se realiza entrega documentada de EPP.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 9.2: Se realiza entrega documentada de EPP. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-9.2 · Doce registros de entrega muestreados contienen fecha, elemento y recepción.",
+          "finding": "Doce registros de entrega muestreados contienen fecha, elemento y recepción.",
+          "action": "",
+          "owner": "Supervisión técnica",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "9.3",
+          "question": "Los trabajadores utilizan adecuadamente los EPP.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 9.3: Los trabajadores utilizan adecuadamente los EPP. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-9.3 · En recorrido del caso, 2 de 10 técnicos no ajustaron correctamente la protección ocular; se corrigió en sitio.",
+          "finding": "En recorrido del caso, 2 de 10 técnicos no ajustaron correctamente la protección ocular; se corrigió en sitio.",
+          "action": "Reentrenar ajuste de protección ocular y comprobar uso correcto en tres recorridos.",
+          "owner": "Supervisión técnica",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "9.4",
+          "question": "Se realizan inspecciones al uso de EPP.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 9.4: Se realizan inspecciones al uso de EPP. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-9.4 · Inspecciones quincenales registradas y reposiciones soportadas.",
+          "finding": "Inspecciones quincenales registradas y reposiciones soportadas.",
+          "action": "",
+          "owner": "Supervisión técnica",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Emergencias",
+      "items": [
+        {
+          "id": "10.1",
+          "question": "Existe plan de emergencias.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 10.1: Existe plan de emergencias. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-10.1 · Plan SST-EME-02 con amenazas, rutas, puntos de encuentro y contactos.",
+          "finding": "Plan SST-EME-02 con amenazas, rutas, puntos de encuentro y contactos.",
+          "action": "",
+          "owner": "Coordinación de emergencias",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "10.2",
+          "question": "Existe brigada de emergencias conformada.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 10.2: Existe brigada de emergencias conformada. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-10.2 · Brigada de seis integrantes con formación documentada.",
+          "finding": "Brigada de seis integrantes con formación documentada.",
+          "action": "",
+          "owner": "Coordinación de emergencias",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "10.3",
+          "question": "Se realizan simulacros periódicos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 10.3: Se realizan simulacros periódicos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-10.3 · Simulacro general del 20/06/2026 con 29 participantes y control de ausencias.",
+          "finding": "Simulacro general del 20/06/2026 con 29 participantes y control de ausencias.",
+          "action": "",
+          "owner": "Coordinación de emergencias",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "10.4",
+          "question": "Se cuenta con equipos de emergencia inspeccionados.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 10.4: Se cuenta con equipos de emergencia inspeccionados. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-10.4 · Un extintor de seis inspeccionados carece de registro de inspección de septiembre; condición física sin anomalías observadas.",
+          "finding": "Un extintor de seis inspeccionados carece de registro de inspección de septiembre; condición física sin anomalías observadas.",
+          "action": "Realizar inspección y registrar la condición actual, sin inventar el registro faltante; verificar los dos próximos ciclos.",
+          "owner": "Coordinación de emergencias",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "10.5",
+          "question": "Se analizan resultados de simulacros.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 10.5: Se analizan resultados de simulacros. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-10.5 · Informe del simulacro identifica demoras y asigna acciones de señalización.",
+          "finding": "Informe del simulacro identifica demoras y asigna acciones de señalización.",
+          "action": "",
+          "owner": "Coordinación de emergencias",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Incidentes y accidentes",
+      "items": [
+        {
+          "id": "11.1",
+          "question": "Existe procedimiento de reporte de incidentes y accidentes.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 11.1: Existe procedimiento de reporte de incidentes y accidentes. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-11.1 · Procedimiento SST-REP-01 divulgado, con canales de reporte y responsables.",
+          "finding": "Procedimiento SST-REP-01 divulgado, con canales de reporte y responsables.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "11.2",
+          "question": "Los accidentes son investigados oportunamente.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 11.2: Los accidentes son investigados oportunamente. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-11.2 · Dos accidentes leves del caso investigados dentro del plazo establecido en el procedimiento académico.",
+          "finding": "Dos accidentes leves del caso investigados dentro del plazo establecido en el procedimiento académico.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "11.3",
+          "question": "Participa el COPASST cuando corresponde.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 11.3: Participa el COPASST cuando corresponde. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-11.3 · Representante del COPASST participó en ambas investigaciones del caso.",
+          "finding": "Representante del COPASST participó en ambas investigaciones del caso.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "11.4",
+          "question": "Se implementan acciones correctivas.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 11.4: Se implementan acciones correctivas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-11.4 · Acciones de las dos investigaciones ejecutadas con soportes de intervención y capacitación.",
+          "finding": "Acciones de las dos investigaciones ejecutadas con soportes de intervención y capacitación.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "11.5",
+          "question": "Se verifica la eficacia de las acciones implementadas.",
+          "status": "NC",
+          "criterion": "Trabajo_Final.pdf · ítem 11.5: Se verifica la eficacia de las acciones implementadas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-11.5 · Las acciones de ambas investigaciones se marcaron cerradas sin comprobar eficacia; seguimiento del caso confirma ausencia de verificación.",
+          "finding": "Las acciones de ambas investigaciones se marcaron cerradas sin comprobar eficacia; seguimiento del caso confirma ausencia de verificación.",
+          "action": "Reabrir las dos acciones y verificar eficacia con observaciones de campo y seguimiento a 30 días.",
+          "owner": "Responsable SG-SST",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "No conformidad menor",
+          "priority": "Programada"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Inspecciones y mantenimiento",
+      "items": [
+        {
+          "id": "12.1",
+          "question": "Existe programa de inspecciones planeadas.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 12.1: Existe programa de inspecciones planeadas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-12.1 · Programa SST-INS-2026 con áreas, equipos, frecuencia y responsables.",
+          "finding": "Programa SST-INS-2026 con áreas, equipos, frecuencia y responsables.",
+          "action": "",
+          "owner": "Supervisión de mantenimiento",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "12.2",
+          "question": "Se ejecutan las inspecciones programadas.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 12.2: Se ejecutan las inspecciones programadas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-12.2 · Se ejecutaron diez de doce inspecciones programadas al corte; dos recorridos fueron aplazados sin nueva fecha.",
+          "finding": "Se ejecutaron diez de doce inspecciones programadas al corte; dos recorridos fueron aplazados sin nueva fecha.",
+          "action": "Reprogramar las dos inspecciones y comprobar ejecución del siguiente ciclo completo.",
+          "owner": "Supervisión de mantenimiento",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "12.3",
+          "question": "Se generan planes de acción.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 12.3: Se generan planes de acción. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-12.3 · Las inspecciones realizadas generaron nueve acciones con responsables.",
+          "finding": "Las inspecciones realizadas generaron nueve acciones con responsables.",
+          "action": "",
+          "owner": "Supervisión de mantenimiento",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "12.4",
+          "question": "Se realiza mantenimiento preventivo de equipos.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 12.4: Se realiza mantenimiento preventivo de equipos. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-12.4 · Diez equipos muestreados cuentan con mantenimiento preventivo vigente.",
+          "finding": "Diez equipos muestreados cuentan con mantenimiento preventivo vigente.",
+          "action": "",
+          "owner": "Supervisión de mantenimiento",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Indicadores",
+      "items": [
+        {
+          "id": "13.1",
+          "question": "Existen indicadores de estructura.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 13.1: Existen indicadores de estructura. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-13.1 · Ficha de estructura mide asignación de recursos y responsables.",
+          "finding": "Ficha de estructura mide asignación de recursos y responsables.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "13.2",
+          "question": "Existen indicadores de proceso.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 13.2: Existen indicadores de proceso. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-13.2 · Ficha de proceso mide ejecución del plan y de la capacitación.",
+          "finding": "Ficha de proceso mide ejecución del plan y de la capacitación.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "13.3",
+          "question": "Existen indicadores de resultado.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 13.3: Existen indicadores de resultado. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-13.3 · Ficha de resultado registra eventos y días de ausencia con fuentes internas del caso.",
+          "finding": "Ficha de resultado registra eventos y días de ausencia con fuentes internas del caso.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "13.4",
+          "question": "Se realiza seguimiento periódico.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 13.4: Se realiza seguimiento periódico. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-13.4 · El tablero está actualizado hasta agosto; septiembre permanece sin consolidar al corte.",
+          "finding": "El tablero está actualizado hasta agosto; septiembre permanece sin consolidar al corte.",
+          "action": "Consolidar septiembre, validar fuentes y revisar el siguiente cierre mensual.",
+          "owner": "Responsable SG-SST",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        },
+        {
+          "id": "13.5",
+          "question": "Se toman decisiones a partir de los resultados.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 13.5: Se toman decisiones a partir de los resultados. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-13.5 · Actas de seguimiento de junio y agosto vinculan resultados con ajustes de programación.",
+          "finding": "Actas de seguimiento de junio y agosto vinculan resultados con ajustes de programación.",
+          "action": "",
+          "owner": "Responsable SG-SST",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Auditoría interna",
+      "items": [
+        {
+          "id": "14.1",
+          "question": "Existe programa anual de auditorías.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 14.1: Existe programa anual de auditorías. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-14.1 · Programa AUD-2026 aprobado en enero con participación del COPASST e independencia.",
+          "finding": "Programa AUD-2026 aprobado en enero con participación del COPASST e independencia.",
+          "action": "",
+          "owner": "Coordinación de auditoría",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "14.2",
+          "question": "Se realizan auditorías internas periódicas.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 14.2: Se realizan auditorías internas periódicas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-14.2 · Auditoría del caso realizada el 01 y 02/10/2026; auditor independiente del proceso evaluado.",
+          "finding": "Auditoría del caso realizada el 01 y 02/10/2026; auditor independiente del proceso evaluado.",
+          "action": "",
+          "owner": "Coordinación de auditoría",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "14.3",
+          "question": "Existen informes de auditoría.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 14.3: Existen informes de auditoría. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-14.3 · Informe AUD-2026-01 reúne alcance, muestra, criterios y resultados.",
+          "finding": "Informe AUD-2026-01 reúne alcance, muestra, criterios y resultados.",
+          "action": "",
+          "owner": "Coordinación de auditoría",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "14.4",
+          "question": "Se gestionan los hallazgos detectados.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 14.4: Se gestionan los hallazgos detectados. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-14.4 · Registro de hallazgos relaciona responsables y plan de tratamiento.",
+          "finding": "Registro de hallazgos relaciona responsables y plan de tratamiento.",
+          "action": "",
+          "owner": "Coordinación de auditoría",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "14.5",
+          "question": "Se verifica el cierre de acciones correctivas.",
+          "status": "CP",
+          "criterion": "Trabajo_Final.pdf · ítem 14.5: Se verifica el cierre de acciones correctivas. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-14.5 · De cuatro acciones anteriores, tres cuentan con eficacia verificada; una se cerró solo por entrega documental.",
+          "finding": "De cuatro acciones anteriores, tres cuentan con eficacia verificada; una se cerró solo por entrega documental.",
+          "action": "Reabrir la acción sin eficacia verificada y comprobar el resultado antes del cierre definitivo.",
+          "owner": "Coordinación de auditoría",
+          "date": "2026-11-02",
+          "annotation": "Resultado limitado a la muestra evaluada. Requiere tratamiento y comprobación de eficacia; no se considera cerrado.",
+          "classification": "Observación",
+          "priority": "Programada"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Revisión por dirección",
+      "items": [
+        {
+          "id": "15.1",
+          "question": "La alta dirección realiza revisión anual del SG-SST.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 15.1: La alta dirección realiza revisión anual del SG-SST. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-15.1 · Revisión anual por gerencia celebrada el 15/09/2026 sobre el ciclo septiembre 2025–agosto 2026; este informe alimentará su seguimiento extraordinario.",
+          "finding": "Revisión anual por gerencia celebrada el 15/09/2026 sobre el ciclo septiembre 2025–agosto 2026; este informe alimentará su seguimiento extraordinario.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "15.2",
+          "question": "Existen actas o informes de revisión.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 15.2: Existen actas o informes de revisión. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-15.2 · Acta RD-2026-01 documenta asistentes, entradas, decisiones y comunicación de resultados.",
+          "finding": "Acta RD-2026-01 documenta asistentes, entradas, decisiones y comunicación de resultados.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "15.3",
+          "question": "Se analizan indicadores, auditorías y cumplimiento legal.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 15.3: Se analizan indicadores, auditorías y cumplimiento legal. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-15.3 · La revisión incluye indicadores, auditoría anterior y evaluación legal del periodo revisado.",
+          "finding": "La revisión incluye indicadores, auditoría anterior y evaluación legal del periodo revisado.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        },
+        {
+          "id": "15.4",
+          "question": "Se generan decisiones y planes de mejora.",
+          "status": "C",
+          "criterion": "Trabajo_Final.pdf · ítem 15.4: Se generan decisiones y planes de mejora. Criterio de la lista de verificación y del procedimiento interno del caso.",
+          "evidence": "Evidencia EV-15.4 · Plan de mejora RD-AC-01 asigna recursos, responsables y fechas para seis decisiones.",
+          "finding": "Plan de mejora RD-AC-01 asigna recursos, responsables y fechas para seis decisiones.",
+          "action": "",
+          "owner": "Gerencia",
+          "date": "",
+          "annotation": "Resultado limitado a la muestra evaluada. Mantener el control y sus registros.",
+          "classification": "Conformidad"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Conclusiones limitadas al alcance y a las muestras descritos.",
+    "Los soportes EV se referencian en la lista; no se adjuntan expedientes documentales.",
+    "Los resultados no equivalen a un puntaje oficial de estándares mínimos."
+  ],
+  "academic": {
+    "simulated": true,
+    "notice": "Ejercicio académico. Los datos y soportes corresponden a un caso de estudio y no acreditan una auditoría real de Telecso S.A.S.",
+    "assumptions": [
+      "32 trabajadores y riesgo III, exclusivamente como supuesto pedagógico.",
+      "Alcance: sede administrativa y operaciones de instalación y mantenimiento de telecomunicaciones en Turbaco.",
+      "Corte documental: 30/09/2026. Auditoría: 01 y 02/10/2026.",
+      "Criterios: preguntas del Trabajo_Final.pdf y procedimientos internos inventados para este ejercicio. No constituye autoevaluación oficial de estándares mínimos."
+    ],
+    "classification": [
+      "Conformidad: ítem C respaldado por evidencia del escenario.",
+      "Observación: ítem CP; en este ejercicio corresponde a una brecha interna que requiere acción, sin diluir un incumplimiento legal confirmado.",
+      "NC mayor: ausencia o fallo de un control crítico que puede afectar de forma sistémica la prevención (3.4 y 8.2).",
+      "NC menor: incumplimiento acotado del método interno de evaluación o seguimiento (6.5 y 11.5).",
+      "Estas reglas son convenciones académicas, no clasificaciones legales automáticas."
+    ]
+  },
+  "findings": [
+    {
+      "id": "H-1.3",
+      "itemId": "1.3",
+      "type": "Observación",
+      "evidenceId": "EV-1.3",
+      "description": "En la muestra de 12 personas, 3 técnicos nuevos desconocen los compromisos de la política."
+    },
+    {
+      "id": "H-3.1",
+      "itemId": "3.1",
+      "type": "Observación",
+      "evidenceId": "EV-3.1",
+      "description": "La matriz de enero no incorpora la actividad de mantenimiento de respaldo eléctrico iniciada en agosto."
+    },
+    {
+      "id": "H-3.4",
+      "itemId": "3.4",
+      "type": "No conformidad mayor",
+      "evidenceId": "EV-3.4",
+      "description": "En 2 de 4 intervenciones eléctricas muestreadas no se implementó el control de aislamiento y verificación previa definido internamente."
+    },
+    {
+      "id": "H-3.5",
+      "itemId": "3.5",
+      "type": "Observación",
+      "evidenceId": "EV-3.5",
+      "description": "Se cumplió la revisión anual de enero, pero el cambio de agosto no fue incorporado a la matriz."
+    },
+    {
+      "id": "H-4.2",
+      "itemId": "4.2",
+      "type": "Observación",
+      "evidenceId": "EV-4.2",
+      "description": "La revisión trimestral de septiembre no incorporó cambios normativos identificados en el boletín interno."
+    },
+    {
+      "id": "H-4.3",
+      "itemId": "4.3",
+      "type": "Observación",
+      "evidenceId": "EV-4.3",
+      "description": "Se evaluaron 18 de 22 requisitos del inventario interno; cuatro quedaron sin conclusión sustentada."
+    },
+    {
+      "id": "H-6.2",
+      "itemId": "6.2",
+      "type": "Observación",
+      "evidenceId": "EV-6.2",
+      "description": "Dos de seis ingresos muestreados recibieron inducción siete días después de iniciar labores."
+    },
+    {
+      "id": "H-6.5",
+      "itemId": "6.5",
+      "type": "No conformidad menor",
+      "evidenceId": "EV-6.5",
+      "description": "Ninguna de las ocho sesiones muestreadas tiene evaluación de aprendizaje o aplicación exigida por el programa interno."
+    },
+    {
+      "id": "H-7.2",
+      "itemId": "7.2",
+      "type": "Observación",
+      "evidenceId": "EV-7.2",
+      "description": "Se localizaron ocho actas mensuales de nueve esperadas; la secretaría confirmó que no se celebró la reunión de julio."
+    },
+    {
+      "id": "H-8.2",
+      "itemId": "8.2",
+      "type": "No conformidad mayor",
+      "evidenceId": "EV-8.2",
+      "description": "El cambio a mantenimiento de respaldo eléctrico de agosto se ejecutó sin evaluación previa de riesgos; confirmado en entrevista del caso con operaciones."
+    },
+    {
+      "id": "H-8.3",
+      "itemId": "8.3",
+      "type": "Observación",
+      "evidenceId": "EV-8.3",
+      "description": "El cambio de oficina sí tiene controles documentados, pero el cambio de agosto carece de registro y plan de intervención."
+    },
+    {
+      "id": "H-9.3",
+      "itemId": "9.3",
+      "type": "Observación",
+      "evidenceId": "EV-9.3",
+      "description": "En recorrido del caso, 2 de 10 técnicos no ajustaron correctamente la protección ocular; se corrigió en sitio."
+    },
+    {
+      "id": "H-10.4",
+      "itemId": "10.4",
+      "type": "Observación",
+      "evidenceId": "EV-10.4",
+      "description": "Un extintor de seis inspeccionados carece de registro de inspección de septiembre; condición física sin anomalías observadas."
+    },
+    {
+      "id": "H-11.5",
+      "itemId": "11.5",
+      "type": "No conformidad menor",
+      "evidenceId": "EV-11.5",
+      "description": "Las acciones de ambas investigaciones se marcaron cerradas sin comprobar eficacia; seguimiento del caso confirma ausencia de verificación."
+    },
+    {
+      "id": "H-12.2",
+      "itemId": "12.2",
+      "type": "Observación",
+      "evidenceId": "EV-12.2",
+      "description": "Se ejecutaron diez de doce inspecciones programadas al corte; dos recorridos fueron aplazados sin nueva fecha."
+    },
+    {
+      "id": "H-13.4",
+      "itemId": "13.4",
+      "type": "Observación",
+      "evidenceId": "EV-13.4",
+      "description": "El tablero está actualizado hasta agosto; septiembre permanece sin consolidar al corte."
+    },
+    {
+      "id": "H-14.5",
+      "itemId": "14.5",
+      "type": "Observación",
+      "evidenceId": "EV-14.5",
+      "description": "De cuatro acciones anteriores, tres cuentan con eficacia verificada; una se cerró solo por entrega documental."
+    }
+  ],
+  "actions": [
+    {
+      "id": "AC-1.3",
+      "findingId": "H-1.3",
+      "description": "Reinducir a los tres técnicos y comprobar comprensión con preguntas sobre la política.",
+      "owner": "Gerencia y responsable SG-SST",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-3.1",
+      "findingId": "H-3.1",
+      "description": "Actualizar la matriz con el mantenimiento de respaldo eléctrico y validar controles en campo.",
+      "owner": "Coordinación de operaciones",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-3.4",
+      "findingId": "H-3.4",
+      "description": "Suspender intervenciones sin control; implementar aislamiento y verificación previa. Verificar cinco intervenciones consecutivas con supervisión.",
+      "owner": "Coordinación de operaciones",
+      "deadline": "2026-10-09",
+      "priority": "Inmediata",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-3.5",
+      "findingId": "H-3.5",
+      "description": "Activar revisión de peligros por cada cambio y comprobar registro del cambio de agosto.",
+      "owner": "Coordinación de operaciones",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-4.2",
+      "findingId": "H-4.2",
+      "description": "Actualizar el inventario con el boletín interno y validar versión y aplicabilidad de cada cambio.",
+      "owner": "Responsable SG-SST y asesoría jurídica",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-4.3",
+      "findingId": "H-4.3",
+      "description": "Evaluar los cuatro requisitos restantes con soporte y registrar conclusión y acciones.",
+      "owner": "Responsable SG-SST y asesoría jurídica",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-6.2",
+      "findingId": "H-6.2",
+      "description": "Impedir inicio de tareas sin inducción y revisar los próximos cinco ingresos.",
+      "owner": "Gestión humana",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-6.5",
+      "findingId": "H-6.5",
+      "description": "Implementar evaluación de aprendizaje y aplicación; revisar eficacia en dos sesiones y observación posterior.",
+      "owner": "Gestión humana",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-7.2",
+      "findingId": "H-7.2",
+      "description": "Reprogramar seguimiento de compromisos y verificar las tres próximas reuniones; conservar el registro de la omisión.",
+      "owner": "Secretaría de comités",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-8.2",
+      "findingId": "H-8.2",
+      "description": "Evaluar el cambio de agosto y sus controles antes de continuar la actividad; verificar el procedimiento en los dos próximos cambios.",
+      "owner": "Coordinación de operaciones",
+      "deadline": "2026-10-09",
+      "priority": "Inmediata",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-8.3",
+      "findingId": "H-8.3",
+      "description": "Consolidar el expediente del cambio, responsables y controles; revisar trazabilidad con operaciones.",
+      "owner": "Coordinación de operaciones",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-9.3",
+      "findingId": "H-9.3",
+      "description": "Reentrenar ajuste de protección ocular y comprobar uso correcto en tres recorridos.",
+      "owner": "Supervisión técnica",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-10.4",
+      "findingId": "H-10.4",
+      "description": "Realizar inspección y registrar la condición actual, sin inventar el registro faltante; verificar los dos próximos ciclos.",
+      "owner": "Coordinación de emergencias",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-11.5",
+      "findingId": "H-11.5",
+      "description": "Reabrir las dos acciones y verificar eficacia con observaciones de campo y seguimiento a 30 días.",
+      "owner": "Responsable SG-SST",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-12.2",
+      "findingId": "H-12.2",
+      "description": "Reprogramar las dos inspecciones y comprobar ejecución del siguiente ciclo completo.",
+      "owner": "Supervisión de mantenimiento",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-13.4",
+      "findingId": "H-13.4",
+      "description": "Consolidar septiembre, validar fuentes y revisar el siguiente cierre mensual.",
+      "owner": "Responsable SG-SST",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    },
+    {
+      "id": "AC-14.5",
+      "findingId": "H-14.5",
+      "description": "Reabrir la acción sin eficacia verificada y comprobar el resultado antes del cierre definitivo.",
+      "owner": "Coordinación de auditoría",
+      "deadline": "2026-11-02",
+      "priority": "Programada",
+      "state": "Abierta"
+    }
+  ],
+  "summary": [
+    {
+      "label": "Conformidad",
+      "count": 50
+    },
+    {
+      "label": "Observación",
+      "count": 13
+    },
+    {
+      "label": "No conformidad menor",
+      "count": 2
+    },
+    {
+      "label": "No conformidad mayor",
+      "count": 2
+    }
+  ],
+  "signatures": [
+    {
+      "role": "Auditor del ejercicio",
+      "name": "Donny Vasquez Ramos",
+      "signature": "Firma: ______________________________"
+    },
+    {
+      "role": "Organización auditada en el caso",
+      "name": "Telecso S.A.S.",
+      "signature": "No se atribuye firma ni participación a un representante real."
+    }
+  ]
+};
+const assessment = { mode: "auditoria", context: report.context, items: report.sections.flatMap(section => section.items) };const topics=['Política de SST','Organización del SG-SST','Peligros y riesgos','Requisitos legales','Plan de trabajo anual','Capacitación y competencia','COPASST y comités','Gestión del cambio','Elementos de protección personal','Emergencias','Incidentes y accidentes','Inspecciones y mantenimiento','Indicadores','Auditoría interna','Revisión por dirección'];
+const statuses={P:'Pendiente',C:'Cumple',CP:'Cumple parcialmente',NC:'No cumple',NA:'No aplica'};
+let activeTopic='all', activeStatus='all', printing=false;
+const $=id=>document.getElementById(id);
+const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function renderSummary(){
+ const counts=Object.fromEntries(Object.keys(statuses).map(s=>[s,assessment.items.filter(i=>i.status===s).length]));
+ const reviewed=assessment.items.length-counts.P;
+ $('progressNumber').textContent=reviewed+' / '+assessment.items.length;
+ $('progressText').textContent=Math.round(reviewed/assessment.items.length*100)+'% de ítems con resultado propuesto';
+ $('progressBar').style.width=reviewed/assessment.items.length*100+'%';
+ $('countC').textContent=counts.C;$('countGaps').textContent=counts.CP+counts.NC;$('countP').textContent=counts.P;
+ $('topics').innerHTML=[['all','Todos los temas'],...topics.map((t,i)=>[String(i+1),t])].map(([id,t])=>{const rows=assessment.items.filter(i=>id==='all'||i.id.split('.')[0]===id);return `<button class="topic ${activeTopic===id?'active':''}" data-topic="${id}" aria-pressed="${activeTopic===id}"><span>${escape(t)}</span><span>${rows.filter(i=>i.status!=='P').length}/${rows.length}</span></button>`}).join('');
+ $('filters').innerHTML=[['all','Todos'],...Object.entries(statuses)].map(([key,label])=>`<button data-filter="${key}" class="${activeStatus===key?'active':''}" aria-pressed="${activeStatus===key}">${label} ${key==='all'?'('+assessment.items.length+')':'('+counts[key]+')'}</button>`).join('');
+ const findings=assessment.items.filter(i=>i.finding.trim() && !["P","C"].includes(i.status));const actions=assessment.items.filter(i=>i.action.trim());
+ $('findings').innerHTML=findings.length?findings.map(i=>`<div class="record"><strong>${escape(i.id)} · ${escape(i.classification)}</strong>${escape(i.finding)}<p class="muted">Criterio: ${escape(i.criterion||'Pendiente de confirmar')}</p></div>`).join(''):'<p class="muted">Sin hallazgos registrados. No implica conformidad.</p>';
+ $('actions').innerHTML=actions.length?actions.map(i=>`<div class="record"><strong>${escape(i.id)} · Acción propuesta</strong>${escape(i.action)}<p class="muted">${escape(i.owner||'Responsable por definir')} · ${escape(i.date||'Fecha por acordar')}</p></div>`).join(''):'<p class="muted">Sin acciones registradas.</p>';
+}
+function renderItems(){
+ const query=$('search').value.toLocaleLowerCase('es');
+ const rows=assessment.items.filter(i=>printing||((activeTopic==='all'||i.id.split('.')[0]===activeTopic)&&(activeStatus==='all'||i.status===activeStatus)&&(i.id+' '+i.question).toLocaleLowerCase('es').includes(query)));
+ $('listTitle').textContent=printing||activeTopic==='all'?'Todas las verificaciones':topics[Number(activeTopic)-1];
+ $('listCount').textContent=rows.length+' de '+assessment.items.length+' verificaciones';
+ $('items').innerHTML=rows.length?rows.map(i=>`<details class="item" data-id="${i.id}" open><summary><span class="qid">${i.id}</span><span class="q">${escape(i.question)}</span><span class="status ${i.status}">${statuses[i.status]}</span></summary><div class="detail"><p><strong>${escape(i.classification)}</strong> · Evidencia EV-${i.id}</p><div class="grid">${[['criterion','Criterio de evaluación'],['evidence','Evidencia y muestra'],['annotation','Anotaciones'],['finding','Resultado / hallazgo']].map(([key,label])=>`<section><h3>${label}</h3><p>${escape(i[key])}</p></section>`).join('')}</div>${i.action?`<section style="margin-top:15px"><h3>Acción y verificación de eficacia</h3><p>${escape(i.action)}</p><p class="muted">${escape(i.owner)} · Fecha: ${escape(i.date)} · Prioridad: ${escape(i.priority)} · Abierta</p></section>`:'<p class="muted">Seguimiento: mantener el control y sus registros.</p>'}</div></details>`).join(''):'<div class="empty">No hay verificaciones para estos filtros.</div>';
+}
+$('topics').addEventListener('click',e=>{const b=e.target.closest('[data-topic]');if(b){activeTopic=b.dataset.topic;renderSummary();renderItems()}});
+$('filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(b){activeStatus=b.dataset.filter;renderSummary();renderItems()}});
+$('search').addEventListener('input',renderItems);
+$('items').addEventListener('input',e=>{const field=e.target.dataset.field;if(!field)return;const item=assessment.items.find(i=>i.id===e.target.closest('[data-id]').dataset.id);item[field]=e.target.value;renderSummary()});
+$('items').addEventListener('click',e=>{const b=e.target.closest('[data-result]');if(!b)return;const detail=b.closest('[data-id]');const item=assessment.items.find(i=>i.id===detail.dataset.id);item.status=b.dataset.result;detail.querySelector('.status').className='status '+item.status;detail.querySelector('.status').textContent=statuses[item.status];detail.querySelectorAll('[data-result]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.result===item.status)));renderSummary()});
+document.querySelectorAll('[data-context]').forEach(input=>input.addEventListener('input',()=>assessment.context[input.dataset.context]=input.value));
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{assessment.mode=button.dataset.mode;document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));$('title').textContent=assessment.mode==='auditoria'?'Auditoría interna del SG-SST':'Diagnóstico del sistema';$('conclusionHelp').textContent=assessment.mode==='auditoria'?'Documenta alcance, criterios, muestra, limitaciones y conclusión. La validación corresponde a la persona auditora.':'Resume prioridades, evidencia faltante y próximos pasos del diagnóstico.'}));
+$('export').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='evaluacion-sg-sst.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+let openItems=[];
+window.addEventListener('beforeprint',()=>{openItems=[...document.querySelectorAll('.item[open]')].map(d=>d.dataset.id);printing=true;renderItems();document.querySelectorAll('textarea').forEach(t=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'})});
+window.addEventListener('afterprint',()=>{printing=false;renderItems();document.querySelectorAll('.item').forEach(d=>d.open=openItems.includes(d.dataset.id))});
+$('print').addEventListener('click',()=>window.print());
+document.querySelectorAll('[data-context]').forEach(input=>{input.value=report.context[input.dataset.context]||''; input.readOnly=true});
+$('conclusionHelp').textContent='Concepto final limitado al caso académico. No constituye una conclusión sobre la empresa real.';
+$('academicSummary').innerHTML=report.summary.map(x=>`<p><strong>${x.count}</strong> · ${escape(x.label)}</p>`).join('');
+$('generalNotes').innerHTML=[...report.academic.assumptions,...report.limitations].map(x=>`<p>${escape(x)}</p>`).join('');
+$('classification').innerHTML=report.academic.classification.map(x=>`<p>${escape(x)}</p>`).join('');
+$('signatures').innerHTML=report.signatures.map(x=>`<section><h3>${escape(x.role)}</h3><p>${escape(x.name)}</p><p>${escape(x.signature)}</p></section>`).join('');
+document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode==='auditoria')));
+renderSummary();renderItems();
+document.querySelectorAll('.item').forEach(d=>d.open=true);
+document.querySelectorAll('textarea').forEach(t=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'});
+</script>
+</body></html>
